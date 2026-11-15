@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; }
+    .navbar { background-color: #0f172a; }
+    .hero-banner { background: linear-gradient(135deg, #1e293b, #0f172a); color: white; padding: 60px 0; }
+    .team-card { border: none; border-radius: 12px; transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
+    .team-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    .team-avatar { width: 100%; height: 260px; object-fit: cover; }
+    .role-badge { font-size: 0.85rem; font-weight: 600; color: #0284c7; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">🚗 Best Cars Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero-banner text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">About Best Cars Dealership</h1>
+      <p class="lead col-lg-8 mx-auto text-secondary text-light opacity-75">
+        Connecting drivers with verified, premier dealership networks across the United States. Trusted by over 250,000 car owners nationwide.
+      </p>
+    </div>
+  </header>
+
+  <!-- Mission Section -->
+  <section class="container my-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">Our Mission & Transparency</h2>
+        <p class="text-muted">
+          Founded with a commitment to customer transparency, Best Cars Dealership leverages cutting-edge cloud microservices and real-time sentiment analysis to ensure that every vehicle appraisal, purchase review, and dealer rating is genuine and verified.
+        </p>
+        <p class="text-muted">
+          Our nationwide network offers top-tier sedans, rugged trucks, electric vehicles, and family SUVs backed by transparent financing and honest customer reviews.
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&auto=format&fit=crop&q=80" alt="Modern Car Dealership Showroom" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Team -->
+  <section class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Meet Our Leadership Team</h2>
+      <p class="text-muted">The experts driving our national dealership network forward</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Member 1 -->
+      <div class="col-md-4">
+        <div class="card team-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80" class="team-avatar" alt="Sarah Jenkins">
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-1">Sarah Jenkins</h5>
+            <div class="role-badge mb-3">Chief Executive Officer</div>
+            <p class="card-text text-muted small">Over 18 years in automotive executive leadership, driving nationwide dealership expansion and customer trust initiatives.</p>
+            <p class="card-text text-primary small fw-semibold">📧 s.jenkins@bestcarsdealership.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 2 -->
+      <div class="col-md-4">
+        <div class="card team-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80" class="team-avatar" alt="Marcus Vance">
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-1">Marcus Vance</h5>
+            <div class="role-badge mb-3">VP of Operations & Logistics</div>
+            <p class="card-text text-muted small">Specializes in supply chain optimization, regional branch governance, and dealer partner quality assurance.</p>
+            <p class="card-text text-primary small fw-semibold">📧 m.vance@bestcarsdealership.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Member 3 -->
+      <div class="col-md-4">
+        <div class="card team-card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&auto=format&fit=crop&q=80" class="team-avatar" alt="Elena Rostova">
+          <div class="card-body text-center p-4">
+            <h5 class="fw-bold mb-1">Elena Rostova</h5>
+            <div class="role-badge mb-3">Head of Customer Experience</div>
+            <p class="card-text text-muted small">Champions consumer advocacy, review verification algorithms, and post-purchase satisfaction programs.</p>
+            <p class="card-text text-primary small fw-semibold">📧 e.rostova@bestcarsdealership.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-0 small text-secondary">© 2026 Best Cars Dealership Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

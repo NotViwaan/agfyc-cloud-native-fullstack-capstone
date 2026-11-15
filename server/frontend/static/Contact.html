@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: #f8fafc; color: #1e293b; }
+    .navbar { background-color: #0f172a; }
+    .hero-banner { background: linear-gradient(135deg, #1e293b, #0f172a); color: white; padding: 50px 0; }
+    .contact-card { border: none; border-radius: 12px; }
+    .contact-icon { font-size: 2rem; color: #0284c7; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar (active on Contact Us) -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">🚗 Best Cars Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Header -->
+  <header class="hero-banner text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-2">Get in Touch</h1>
+      <p class="lead col-lg-8 mx-auto text-light opacity-75">
+        Have questions about a dealership, car inventory, or review submission? Our nationwide customer support team is here to assist you 24/7.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact Info Grid & Form -->
+  <main class="container my-5">
+    <div class="row g-4 mb-5">
+      <!-- Address -->
+      <div class="col-md-4">
+        <div class="card contact-card shadow-sm h-100 text-center p-4">
+          <div class="contact-icon">📍</div>
+          <h5 class="fw-bold">Headquarters</h5>
+          <p class="text-muted small mb-0">1200 Innovation Parkway, Suite 500<br>Dallas, TX 75201, United States</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-4">
+        <div class="card contact-card shadow-sm h-100 text-center p-4">
+          <div class="contact-icon">📞</div>
+          <h5 class="fw-bold">Customer Hotline</h5>
+          <p class="text-muted small mb-1">Toll-free: +1 (800) 555-CARS (2277)</p>
+          <p class="text-muted small mb-0">Mon – Sat: 8:00 AM – 8:00 PM CST</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-md-4">
+        <div class="card contact-card shadow-sm h-100 text-center p-4">
+          <div class="contact-icon">✉️</div>
+          <h5 class="fw-bold">Email Inquiries</h5>
+          <p class="text-muted small mb-1">Support: support@bestcarsdealership.com</p>
+          <p class="text-muted small mb-0">Partnerships: dealers@bestcarsdealership.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form & Image Section -->
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="card shadow-sm p-4 rounded-4 border-0">
+          <h3 class="fw-bold mb-3">Send Us a Message</h3>
+          <form onsubmit="event.preventDefault(); alert('Thank you for contacting Best Cars Dealership! We will respond shortly.');">
+            <div class="mb-3">
+              <label for="contactName" class="form-label fw-semibold">Your Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="John Doe" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label fw-semibold">Email Address</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactSubject" class="form-label fw-semibold">Subject</label>
+              <input type="text" class="form-control" id="contactSubject" placeholder="Inquiry about Topeka Dealership" required>
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label fw-semibold">Message</label>
+              <textarea class="form-control" id="contactMessage" rows="4" placeholder="How can we help you today?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 py-2 fw-semibold">Submit Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&auto=format&fit=crop&q=80" alt="Customer Support and Assistance" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-0 small text-secondary">© 2026 Best Cars Dealership Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
